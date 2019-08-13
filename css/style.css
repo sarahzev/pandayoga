@@ -1,0 +1,251 @@
+
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'delimax-webfont';
+  src: url('../fonts/delimax-webfont.woff') format('woff'),
+       url('../fonts/delimax-webfont.ttf') format('truetype');
+}
+
+/* Base Styles -------------------- */
+
+body {
+	color: white;
+	background-color: #C6D6BB;
+	font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "delimax-webfont", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	text-align: center;
+}
+
+.primary-content,
+.main-footer {
+	text-align: center;
+}
+
+/* contact form ============ */
+
+input {
+	width: 350px;
+	padding: 12px 10px;
+}
+
+textarea {
+	width: 350px;
+	padding: 12px 10px;
+	height: 150px;
+	resize: none;
+}
+
+
+button {
+	transition: background .3s, color .3s;
+	color: #fff;
+	width: 20%;
+	font-weight: 700;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 0;
+	background: rgba(0, 0, 0, 0.25);
+}
+button:hover {
+	color: #fff;
+	background: #B4C979;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ================================= 
+  Button Transitions
+==================================== */
+
+.button {
+	transition: background .3s, color .3s;
+}
+.button:hover {
+	color: #fff;
+	background: #B4C979;
+}
+
+
+/* Layout Styles ------------------ */
+
+.main-header {
+	text-align: center;
+	font-size: 1.4em;
+	margin: 25px;
+}
+
+
+.menu {
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.menu .btn {
+	display: inline-block;
+	font-size: 18px;
+	float: left;
+	color: #fff;
+	padding: 8px 12px;
+	transition: background .3s, color .3s;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: #C6D6BB;
+}
+
+.button {
+	color: #4a89ca;
+	width: 250px;
+	font-weight: 700;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 0;
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: .5em;
+}
+
+
+.panda {
+	width: 480px;
+	padding: 50px;
+	
+}
+
+.panda2 {
+	width: 300px;
+	margin: auto;
+	padding: 20px;
+}
+
+.pandabar {
+	width: 450px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.primary-content {
+  color: #fff;
+  text-align: center;
+  padding: 10px 30px;
+  margin-top: 30px;
+  width: cover;
+  background: #fff;
+  background-size: cover;
+  border-radius: 5px;
+	background: linear-gradient(#C6D6BB, transparent 90%),
+              linear-gradient(0deg, #C6D6BB, transparent),
+              #ffa949 url('../img/bamboo.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.primary-content p {
+	width: 375px;
+	margin: auto;
+	padding-bottom: 25px;
+}
+
+.secondary-content {
+  color: #C6D6BB;
+  text-align: center;
+  padding: 20px 30px;
+  margin: auto;
+  width: 375px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.yoga-content {
+  color: #C6D6BB;
+  text-align: center;
+  padding: 20px 30px;
+  margin: 50px auto;
+  width: 375px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.main-footer {
+  color: #fff;
+  font-size: 0.9em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #fff;
+}
+
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #62913A;
+}
+
+a:hover {
+  color: slategray;
+}
+
+a:active {
+  color: slategray;
+}
+
+/* --------Media Queries-------- */
+
+@media (min-width: 800px) {
+	
+	.main-header {
+		font-size: 1.85em;
+	}
+	
+	.primary-content {
+		width: cover;
+	}
+	
+	.primary-content p {
+		width: 750px;
+		margin: auto;
+	}
+	
+	.secondary-content {
+		width: 900px;
+	}
+	
+	.yoga-content {
+		width: 750px;
+	}
+	
+	.pandabar {
+		width: 600px;
+	}
+	
+	/* contact form ============ */
+
+input {
+	width: 600px;
+	padding: 12px 10px;
+}
+
+textarea {
+	width: 600px;
+	padding: 12px 10px;
+	height: 150px;
+	resize: none;
+}
+}
